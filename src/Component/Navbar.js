@@ -25,7 +25,7 @@ export default class Navbar extends Component {
       <div className="Nav">
         <Icon src={icon1} alt="error" />
         <div>
-          <Link to="/">
+          <Link to="/Porfolio">
             <Button>Home</Button>
           </Link>
           <Link to="/About">
