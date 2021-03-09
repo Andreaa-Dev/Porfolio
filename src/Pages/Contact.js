@@ -9,11 +9,12 @@ const H1 = styled.h1`
   color: #949cdf;
   font-size: 80px;
   text-align: center;
+  margin-right: 1050px;
 `;
 
 const Img = styled.img`
   margin-bottom: 0px;
-  margin-left: 1700px;
+  margin-left: 100px;
 `;
 
 const Title = styled.div`
@@ -33,15 +34,17 @@ export default class Contact extends Component {
         <H1>Get in touch !!! </H1>
         <Title>
           <div>
-            <img src={Phone} alt="error" height="150px" width="150px" />
+            <img src={Phone} alt="error" height="200px" width="200px" />
             <Size>+358 44981 6375 </Size>
           </div>
           <div>
-            <img src={Mailbox} alt="error" height="150px" width="150px" />
+            <img src={Mailbox} alt="error" height="200px" width="200px" />
             <Size>ngocanhhsgs@gmail.com</Size>
           </div>
+          <div>
+            <Img src={ContactUs} alt="error" height="650px" width="650px" />
+          </div>
         </Title>
-        <Img src={ContactUs} alt="error" height="350px" width="350px" />
       </div>
     );
   }

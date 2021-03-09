@@ -1,51 +1,52 @@
 import React, { Component } from "react";
 import Navbar from "../Component/Navbar";
-import HTML from "../Component/html.jpg";
-import CSS from "../Component/css.jpg";
-import JS from "../Component/js.jpg";
-import ReactImg from "../Component/react.jpg";
+import Code from "./Code.gif";
+
 import styled from "styled-components";
+
+const Container = styled.div`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 const H1 = styled.h1`
   font-family: "Cookie", cursive;
   color: #949cdf;
   font-size: 80px;
-  text-align: center;
+  margin-bottom: 0;
+  margin-top: 5;
 `;
 
-const Title = styled.p`
-  text-align: center;
+const Text = styled.p`
+  font-family: "Inconsolata", monospace;
   font-size: 30px;
+  padding-bottom: 0px;
 `;
-const Prog = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
+const Text1 = styled.div`
+  width: 100rem;
+  margin: 0;
 `;
+
 export default class About extends Component {
   render() {
     return (
-      <div>
-        <H1>I am familiar with</H1>
-        <Prog>
-          <div>
-            <Title>HTML</Title>
-            <img src={HTML} alt="error" width="230px" height="230px" />
-          </div>
-          <div>
-            <Title>CSS</Title>
-            <img src={CSS} alt="error" width="250px" height="250px" />
-          </div>
-          <div>
-            <Title>JavaScript</Title>
-            <img src={JS} alt="error" width="360px" height="250px" />
-          </div>
-          <div>
-            <Title>React</Title>
-            <img src={ReactImg} alt="error" width="200px" height="230px" />
-          </div>
-        </Prog>
-      </div>
+      <Container>
+        <H1>Framework</H1>
+        <Text1>
+          <Text>
+            I am familiar with <b> HTML, CSS</b> and <b>JavaScript </b> as the
+            basic framework. In addition, I am also learning <b>React</b> and it
+            has been a useful tool to create a Website since I has started
+            learning coding.
+          </Text>
+        </Text1>
+
+        <img src={Code} alt="error" width="700px" height="600px" />
+      </Container>
     );
   }
 }
